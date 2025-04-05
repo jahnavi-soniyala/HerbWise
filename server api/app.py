@@ -214,4 +214,5 @@ def hello():
     'amazon_links': amazon_links(remedies[disease]['herbs'])
    }
     return jsonify(result)
-app.run()
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=10000)
